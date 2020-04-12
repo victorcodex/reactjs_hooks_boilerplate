@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import Router from "./config/router";
+import { GlobalContextProvider } from "./context/globalContext";
 
 function App() {
 
   return (
-    <div className="App">
-      <Router />
-    </div>
+    <GlobalContextProvider>
+        <Router />
+    </GlobalContextProvider>
   );
 }
 

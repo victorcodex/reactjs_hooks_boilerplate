@@ -22,7 +22,9 @@ export default function Router() {
     return (
         <div>
             <Nav />
-            {routeResult || <NotFound />}
+            <div className="container">
+                {routeResult || <NotFound />}
+            </div>
         </div>
     );
 }
