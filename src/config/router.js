@@ -2,7 +2,7 @@ import React from "react";
 
 import { useRoutes } from "hookrouter";
 
-import Nav from "../pages/nav";
+import Nav from "./../nav";
 
 import Home from "../pages/home";
 import About from "../pages/about";
