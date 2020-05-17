@@ -1,6 +1,4 @@
-export const GET_PRODUCTS = "GET_PRODUCTS";
-export const GET_SINGLE_PRODUCT = "GET_PRODUCTS";
-export const ADD_PRODUCTS = "GET_PRODUCTS";
+export const ADD_PRODUCT = "ADD_PRODUCT";
 export const DUMMY_PRODUCTS = [
     {
         id: 1,
@@ -9,7 +7,7 @@ export const DUMMY_PRODUCTS = [
         price: 299
     },
     {
-        id: 1,
+        id: 2,
         product: "Desktop",
         category: "Electronic",
         price: 178

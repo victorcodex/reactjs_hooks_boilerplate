@@ -5,16 +5,12 @@ import { useRoutes } from "hookrouter";
 import Nav from "./../nav";
 
 import Home from "../pages/home";
-import About from "../pages/about";
-import ProductOverview from "../pages/productOverview";
-import ProductDetails from "../pages/productDetails";
+import Products from "../pages/products";
 import NotFound from "../pages/notfound";
 
 const routes = {
     '/': () => <Home />,
-    '/about': () => <About />,
-    '/products': () => <ProductOverview />,
-    '/products/:id': ({id}) => <ProductDetails id={id} />
+    '/products': () => <Products />
 };
 
 export default function Router() {

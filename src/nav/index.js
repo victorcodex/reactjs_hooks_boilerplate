@@ -6,6 +6,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
+import { A } from "hookrouter";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,9 +29,12 @@ export default function Nav() {
             <Toolbar>
                 <Typography variant="h6" className={classes.title}>
                 <div className="nav">
-                        <a href="/">Home</a> 
-                        <a href="about">About</a> 
-                        <a href="products">Products</a>  
+                        <A href="/">
+                          Home
+                        </A>
+                        <A href="/products">
+                          Products
+                        </A>
                     </div>
                 </Typography>
                 <Badge badgeContent={products.length} color="secondary">Total Products</Badge>

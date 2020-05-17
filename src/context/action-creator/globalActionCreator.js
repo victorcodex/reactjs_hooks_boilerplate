@@ -1,5 +1,5 @@
 import { useGlobalDispatchContext } from "./../globalContext";
-import { GET_PRODUCTS, GET_SINGLE_PRODUCT, ADD_PRODUCTS } from "./../actions-types";
+import { GET_PRODUCTS, GET_SINGLE_PRODUCT, ADD_PRODUCT } from "./../actions-types";
 
 export const GlobalActionCreator = () => {
     const dispatch = useGlobalDispatchContext();
@@ -9,15 +9,15 @@ export const GlobalActionCreator = () => {
                 type: GET_PRODUCTS
             });
         },
-        getSingleProducts: id => {
+        getSingleProduct: id => {
             dispatch({
                 type: GET_SINGLE_PRODUCT,
                 id
             });
         },
-        addProducts: product => {
+        addProduct: product => {
             dispatch({
-                type: ADD_PRODUCTS,
+                type: ADD_PRODUCT,
                 product
             });
         }
